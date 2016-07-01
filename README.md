@@ -1,5 +1,5 @@
 # reactive-angular2
-A simple client-only github frontend using angular2 and redux-inspired reactive data flow with rxjs.
+A simple client-only github frontend using [angular2](https://angular.io/) and [redux](https://github.com/reactjs/redux)-inspired reactive data flow with [rxjs](https://github.com/Reactive-Extensions/RxJS).
 
 ## Live example
 
