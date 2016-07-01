@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright © `2015` `Péter Zahorán`
+Copyright © `2016` `Péter Zahorán`
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
