@@ -6,7 +6,7 @@ import { Repo } from '../github';
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'repo-card',
-  templateUrl: '/search/repo-card.component.html',
+  templateUrl: 'search/repo-card.component.html',
 })
 export class RepoCard {
   @Input() repo: Repo;

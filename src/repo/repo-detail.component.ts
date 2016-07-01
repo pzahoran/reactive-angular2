@@ -8,7 +8,7 @@ import { IssueList } from './issue-list.component';
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'repo-detail',
-  templateUrl: '/repo/repo-detail.component.html',
+  templateUrl: 'repo/repo-detail.component.html',
   directives: [IssueList]
 })
 export class RepoDetail implements OnDestroy {

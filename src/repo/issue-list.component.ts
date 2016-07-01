@@ -6,7 +6,7 @@ import { Dispatcher, dispatcher, FetchMoreIssuesAction } from '../store';
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'issue-list',
-  templateUrl: '/repo/issue-list.component.html'
+  templateUrl: 'repo/issue-list.component.html'
 })
 export class IssueList  {
   @Input() repoName: string;

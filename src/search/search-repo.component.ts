@@ -8,7 +8,7 @@ import { state, Model } from '../store';
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'search-repo',
-  templateUrl: '/search/search-repo.component.html',
+  templateUrl: 'search/search-repo.component.html',
   directives: [
     RepoCard, 
     SearchBar,

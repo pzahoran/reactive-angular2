@@ -7,7 +7,7 @@ import { Model, state } from '../store';
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'app',
-  templateUrl: '/app/app.component.html',
+  templateUrl: 'app/app.component.html',
   directives: [
     ROUTER_DIRECTIVES,
     Debug,

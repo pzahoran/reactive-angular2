@@ -6,7 +6,7 @@ import { SearchAction, Dispatcher, dispatcher } from '../store';
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'search-bar',
-  templateUrl: '/search/search-bar.component.html',
+  templateUrl: 'search/search-bar.component.html',
   directives: [REACTIVE_FORM_DIRECTIVES]
 })
 export class SearchBar implements OnDestroy {
