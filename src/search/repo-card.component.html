@@ -1,0 +1,23 @@
+<div class="panel panel-default clickable" (click)="select()">
+    <div class="panel-heading">
+        <div class="media">
+            <div class="media-left">
+                <img [src]="repo.owner.avatarUrl" class="img-rounded" style="height:66px">
+            </div>
+            <div class="media-body">
+                <h1 class="panel-title text-nowrap" style="overflow: hidden">{{repo.name}}</h1>
+                <p class="small text-nowrap" style="overflow: hidden">by {{repo.owner.login}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <p style="overflow: hidden; max-height: 120px">{{repo.description}}</p>
+        <p class="line-with-labels">
+            <span class="label label-default">{{repo.language}}</span>
+            <span class="label label-default"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{repo.stargazersCount}}</span>
+            <span class="label label-default"><span class="glyphicon glyphicon-random" aria-hidden="true"></span> {{repo.forksCount}}</span>
+            <span class="label label-default">Issues {{repo.openIssuesCount}}</span>
+        </p>
+        <p class="help-block small">Updated on {{repo.updatedAt | date}}</p>
+    </div>
+</div>

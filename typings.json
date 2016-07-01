@@ -1,0 +1,29 @@
+{
+  "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160316155526",
+    "browserify": "registry:dt/browserify#12.0.1+20160317120654",
+    "chalk": "registry:dt/chalk#0.4.0+20160317120654",
+    "del": "registry:dt/del#2.2.0+20160317120654",
+    "glob": "registry:dt/glob#5.0.10+20160317120654",
+    "gulp": "registry:dt/gulp#3.8.0+20160316155526",
+    "gulp-sourcemaps": "registry:dt/gulp-sourcemaps#0.0.0+20160316155526",
+    "gulp-uglify": "registry:dt/gulp-uglify#0.0.0+20160316155526",
+    "gulp-util": "registry:dt/gulp-util#0.0.0+20160316155526",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
+    "lodash": "registry:dt/lodash#3.10.0+20160619033623",
+    "minimatch": "registry:dt/minimatch#2.0.8+20160317120654",
+    "node": "registry:dt/node#6.0.0+20160608110640",
+    "orchestrator": "registry:dt/orchestrator#0.0.0+20160316155526",
+    "q": "registry:dt/q#0.0.0+20160417152954",
+    "source-map": "registry:dt/source-map#0.0.0+20160317120654",
+    "through2": "registry:dt/through2#2.0.0+20160317120654",
+    "uglify-js": "registry:dt/uglify-js#2.6.1+20160316155526",
+    "vinyl": "registry:dt/vinyl#1.1.0+20160316155526",
+    "vinyl-buffer": "registry:dt/vinyl-buffer#0.0.0+20160316155526",
+    "vinyl-source-stream": "registry:dt/vinyl-source-stream#0.0.0+20160316155526"
+  },
+  "globalDevDependencies": {
+    "resolve": "registry:dt/resolve#0.0.0+20160620212904",
+    "run-sequence": "registry:dt/run-sequence#0.0.0+20160316155526"
+  }
+}

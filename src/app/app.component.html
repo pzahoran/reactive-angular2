@@ -1,0 +1,14 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" [routerLink]="['/']">reactive-angular2</a>
+        </div>
+    </div>
+</nav>
+<div class="container" role="main">
+    <div *ngIf="(state|async).error" class="alert alert-warning" role="alert">
+        <h4>Alas, there was an error!</h4>
+        <p>{{(state|async).error}}</p>
+    </div>
+    <router-outlet></router-outlet>
+</div>

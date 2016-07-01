@@ -1,0 +1,4 @@
+{
+    // uncomment the line below and ad your github token to raise github rate limit for unauthenticated users
+    //"githubtoken": <your github token here>
+}

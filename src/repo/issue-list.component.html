@@ -1,0 +1,43 @@
+<h2 *ngIf="issues.items.length == 0">No issues</h2>
+<template [ngIf]="issues.items.length != 0">
+    <h2>Open issues</h2>
+    <ul class="list-unstyled list-dash">
+        <li *ngFor="let issue of issues.items">
+            <div class="row header-row">
+                <div class="col-sm-1">
+                    <h4>
+                        <div class="label label-primary badge-small">{{issue?.pullRequest ? "PR" : "I"}}</div>
+                        <div *ngIf="issue.state == 'closed'" class="label label-primary badge-small">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        </div>
+                    </h4>
+                </div>
+                <div class="col-sm-9">
+                    <h4 class="line-with-labels">
+                        {{issue.title}}
+                        <span *ngFor="let label of issue.labels">
+                            <span class="label label-primary" [style.background-color]="'#'+label.color">{{label.name}}</span>
+                        </span>
+                    </h4>
+                    <p class="line-with-labels">
+                        #{{issue.number}} opened on {{issue.createdAt | date}} by {{issue.user.login}}
+                        <span *ngIf="issue.milestone" class="label label-primary">
+                            <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+                            {{issue.milestone.title}} open {{issue.milestone.openIssues}}, closed {{issue.milestone.closedIssues}}
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-1">
+                    <img *ngIf="issue.assignee" [src]="issue.assignee.avatarUrl" class="img-rounded badge-small">
+                </div>
+                <div class="col-sm-1">
+                    <div *ngIf="issue.comments > 0" class="label label-default badge-small">
+                        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                        {{issue.comments}}
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</template>
+<button *ngIf="issues.nextPage" class="btn btn-default btn-block" (click)="more()">More</button>

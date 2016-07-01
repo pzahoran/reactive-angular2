@@ -1,0 +1,11 @@
+{
+    "exclude": [
+        "node_modules",
+        "src",
+        "dist"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es6"
+    }
+}

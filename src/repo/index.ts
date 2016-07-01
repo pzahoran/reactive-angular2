@@ -1,0 +1,1 @@
+export { RepoDetail } from './repo-detail.component';

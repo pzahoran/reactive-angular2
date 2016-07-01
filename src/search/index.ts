@@ -1,0 +1,1 @@
+export { SearchRepo } from './search-repo.component';

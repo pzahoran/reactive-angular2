@@ -1,0 +1,10 @@
+<form role="search">
+    <div class="form-group">
+        <div class="input-group input-group-lg">
+            <input type="text" [formControl]="termControl" [ngModel]='term' class="form-control" placeholder="Search term"/>
+            <span class="input-group-btn">
+                <button class="btn btn-primary" (click)="searchClick()" role="button">Search GitHub</button>
+            </span>
+        </div>
+    </div>
+</form>

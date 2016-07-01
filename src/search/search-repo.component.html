@@ -1,0 +1,23 @@
+<search-bar [term]='(term|async)'></search-bar>
+<div class="well help-block">
+    <p>E.g. 
+        <code>jquery</code>, 
+        <code>jquery in:name,description</code>, 
+        <code>user:github</code>, 
+        <code>rails language:javascript</code>,
+        etc.
+    </p> 
+    <p>See <a href="https://help.github.com/articles/searching-repositories/">Github Repository Search Guide</a> for further details.</p>
+</div>
+<template [ngIf]="(searchResult|async)">
+    <h1>Found {{(searchResult|async).totalCount}} repositories</h1>
+    <div class="row">
+        <template ngFor let-repo let-index="index" [ngForOf]="(searchResult|async).items" [ngForTrackBy]="repoKey">
+            <div *ngIf="index % 2 == 0" class="clearfix visible-sm-block"></div>
+            <div *ngIf="index % 4 == 0" class="clearfix visible-md-block visible-lg-block"></div>
+            <div class="col-sm-6 col-md-3">
+                <repo-card [repo]='repo'></repo-card>
+            </div>
+        </template>
+    </div>
+</template>
