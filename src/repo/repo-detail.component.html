@@ -21,7 +21,7 @@
         <span class="label label-default">{{(repo|async).language}}</span>
         <span class="label label-default"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> {{(repo|async).stargazersCount}}</span>
         <span class="label label-default"><span class="glyphicon glyphicon-random" aria-hidden="true"></span> {{(repo|async).forksCount}}</span>
-        <span class="label label-default">(issues|async) {{(repo|async).openIssuesCount}}</span>
+        <span class="label label-default">open issues {{(repo|async).openIssuesCount}}</span>
     </p>
     <p class="help-block small">Updated on {{(repo|async).updatedAt | date}}</p>
 

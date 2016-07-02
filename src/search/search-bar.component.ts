@@ -18,7 +18,7 @@ export class SearchBar implements OnDestroy {
   constructor(
       @Inject(dispatcher) private dispatcher: Dispatcher
   ) {
-    const term$ = (this.termControl.valueChanges as Observable<string>).startWith('');
+    const term$ = (this.termControl.valueChanges as Observable<string>).skip(1);
 
     this.sub = Observable.combineLatest(
         term$.debounceTime(1000),
