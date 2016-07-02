@@ -5,7 +5,6 @@ import { Debug } from '../utils';
 import { Model, state } from '../store';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'app',
   templateUrl: 'app/app.component.html',
   directives: [

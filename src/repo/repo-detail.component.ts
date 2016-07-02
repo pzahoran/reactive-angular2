@@ -6,7 +6,6 @@ import { Model, state, Dispatcher, dispatcher, FetchMoreIssuesAction, SelectRepo
 import { IssueList } from './issue-list.component';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'repo-detail',
   templateUrl: 'repo/repo-detail.component.html',
   directives: [IssueList]

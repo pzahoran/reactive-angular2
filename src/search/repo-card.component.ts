@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { Repo } from '../github';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'repo-card',
   templateUrl: 'search/repo-card.component.html',
 })

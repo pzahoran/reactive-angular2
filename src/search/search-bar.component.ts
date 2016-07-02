@@ -4,7 +4,6 @@ import { FormControl, REACTIVE_FORM_DIRECTIVES } from '@angular/forms';
 import { SearchAction, Dispatcher, dispatcher } from '../store';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'search-bar',
   templateUrl: 'search/search-bar.component.html',
   directives: [REACTIVE_FORM_DIRECTIVES]

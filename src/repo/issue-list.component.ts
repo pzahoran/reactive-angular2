@@ -4,7 +4,6 @@ import { Repo, Issue, List } from '../github';
 import { Dispatcher, dispatcher, FetchMoreIssuesAction } from '../store';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'issue-list',
   templateUrl: 'repo/issue-list.component.html'
 })
