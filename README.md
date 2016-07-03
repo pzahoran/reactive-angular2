@@ -25,7 +25,7 @@ Then visit [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## GitHub rate limit
 
-GitHub imposes a rate limit of 60 requests per hour on unauthenticated users (see [details](https://developer.github.com/v3/#rate-limiting). To lift that limit create a personal authentication token on [GitHub](https://github.com/settings/tokens/new) and specify it as the `githubtoken` in `reactive-angular2/src/config.json`
+GitHub imposes a rate limit of 60 requests per hour on unauthenticated users (see [details](https://developer.github.com/v3/#rate-limiting)). To lift that limit create a personal authentication token on [GitHub](https://github.com/settings/tokens/new) and specify it as the `githubtoken` in `reactive-angular2/src/config.json`
 
 ```javascript
 {
