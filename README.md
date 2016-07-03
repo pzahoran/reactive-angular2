@@ -29,7 +29,7 @@ GitHub imposes a rate limit of 60 requests per hour on unauthenticated users (se
 
 ```javascript
 {
-    // uncomment the line below and ad your github token to raise github rate limit for unauthenticated users
+    // uncomment the line below and add your github token to raise github rate limit for unauthenticated users
     "githubtoken": <your github token here>
 }
 ```
